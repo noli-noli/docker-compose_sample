@@ -1,6 +1,10 @@
 version: "3"
 services:
   container:
+    #コンテナの名前を指定
+    container_name: Mycontainer
+
+    #ビルド
     build:
       context: .
       #ビルドする際に使用するdockerfileを指定
@@ -24,7 +28,11 @@ services:
     #学内用proxyを使用するための環境変数が書かれたファイルを指定
     env_file:
       - proxy.env
+
+    #ttyを有効化
     tty: true
+
+    #キーボード割込みによるコンテナの停止時、コンテナ内のプロセスに正常終了を通知する。
     stop_signal: SIGINT
 
     #GPUを使用するための設定

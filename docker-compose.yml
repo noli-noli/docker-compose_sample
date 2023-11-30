@@ -1,8 +1,9 @@
 version: "3"
 services:
-  container:
-    #コンテナの名前を指定
-    container_name: Mycontainer
+  #以下を自身の学番に変更(イメージファイルの名称)
+  gp21axxx:
+    #以下を自身の学番に変更(コンテナの名称)
+    container_name: purezemi-gp21axxx
 
     #ビルド
     build:

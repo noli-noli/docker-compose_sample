@@ -38,7 +38,7 @@ services:
 
     #Portの設定
     ports:
-      - "8080:8080"
+      - "8080:3000"
 
     #GPUを使用するための設定
     deploy:
